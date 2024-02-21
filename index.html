@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/468990a9c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="music-player">
+      <div id="playlist">
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+
+      <div class="image-container">
+        <img src="images/pentagram.jpeg" id="song-image" alt="" />
+        <div class="filter"></div>
+        <div class="hide" id="playlist-container">
+          <ul id="playlist-songs"></ul>
+        </div>
+      </div>
+
+      <div class="song-details">
+        <p id="song-name">Bir</p>
+        <p id="song-artist">Pentagram</p>
+      </div>
+      <div class="player-options">
+        <button id="shuffle">
+          <i class="fa-solid fa-shuffle"></i>
+        </button>
+        <button id="prev">
+          <i class="fa-solid fa-backward-step"></i>
+        </button>
+        <button id="play">
+          <i class="fa-regular fa-circle-play"></i>
+        </button>
+        <button id="pause" class="hide">
+          <i class="fa-regular fa-circle-pause"></i>
+        </button>
+        <button id="next">
+          <i class="fa-solid fa-forward-step"></i>
+        </button>
+        <button id="repeat">
+          <i class="fa-solid fa-repeat"></i>
+        </button>
+      </div>
+      <audio
+        id="audio"
+        src="musics/Pentagram-Bir.mp3"
+        controls
+        preload="metadata"
+        class="hide"
+      ></audio>
+      <div id="progress-bar">
+        <div id="current-progress"></div>
+      </div>
+      <div class="time-container">
+        <span id="current-time">1:20</span>
+        <span id="max-duration">3:50</span>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
